@@ -28,10 +28,15 @@ class Pimp(webapp.RequestHandler):
 class MainPage(webapp.RequestHandler):
   def get(self):
     self.response.out.write('<html><body>')
-    self.response.out.write('Hookers...')
+    self.response.out.write('<h3>Hookers</h3>')
     hookers = Hooker.gql("ORDER BY date DESC LIMIT 10")
     for hooker in hookers:
-      self.response.out.write('<li>%s</li>' % hooker.name)
+      self.response.out.write(hooker.name)
+      self.response.out.write("/")
+      self.response.out.write(hooker.age)
+      self.response.out.write("/")
+      self.response.out.write(hooker.gender)
+      self.response.out.write("<br/>")
     self.response.out.write("""
           <form action="/hereiam" method="post">
           <div><input name="phone" value="9548168827" /></div>
