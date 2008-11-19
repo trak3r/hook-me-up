@@ -1,16 +1,16 @@
 //
-//  hook_me_upAppDelegate.m
-//  hook-me-up
+//  HookMeUpAppDelegate.m
+//  HookMeUp
 //
 //  Created by Ted on 11/19/08.
 //  Copyright Anachromystic 2008. All rights reserved.
 //
 
-#import "hook_me_upAppDelegate.h"
+#import "HookMeUpAppDelegate.h"
 #import "RootViewController.h"
 
 
-@implementation hook_me_upAppDelegate
+@implementation HookMeUpAppDelegate
 
 @synthesize window;
 @synthesize navigationController;

@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'hook-me-up' target in the 'hook-me-up' project
+// Prefix header for all source files of the 'HookMeUp' target in the 'HookMeUp' project
 //
 
 #ifdef __OBJC__

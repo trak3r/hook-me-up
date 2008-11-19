@@ -1,18 +1,18 @@
 // !$*UTF8*$!
 {
-	1D6058900D05DD3D006BFB54 /* hook-me-up */ = {
+	1D6058900D05DD3D006BFB54 /* HookMeUp */ = {
 		activeExec = 0;
 		executables = (
-			9FE8531E0ED48C0600FDF576 /* hook-me-up */,
+			9F0C9F0A0ED4C3E800F2BC65 /* HookMeUp */,
 		);
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 9FE8531E0ED48C0600FDF576 /* hook-me-up */;
-		activeTarget = 1D6058900D05DD3D006BFB54 /* hook-me-up */;
-		codeSenseManager = 9FE8532B0ED48C0D00FDF576 /* Code sense */;
+		activeExecutable = 9F0C9F0A0ED4C3E800F2BC65 /* HookMeUp */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* HookMeUp */;
+		codeSenseManager = 9F0C9F110ED4C3F500F2BC65 /* Code sense */;
 		executables = (
-			9FE8531E0ED48C0600FDF576 /* hook-me-up */,
+			9F0C9F0A0ED4C3E800F2BC65 /* HookMeUp */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -22,7 +22,7 @@
 					20,
 					341,
 					20,
-					48,
+					48.16259765625,
 					43,
 					43,
 					20,
@@ -37,45 +37,44 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 248824364;
-			PBXWorkspaceStateSaveDate = 248824364;
+			PBXPerProjectTemplateStateSaveDate = 248824808;
+			PBXWorkspaceStateSaveDate = 248824808;
 		};
-		sourceControlManager = 9FE8532A0ED48C0D00FDF576 /* Source Control */;
+		sourceControlManager = 9F0C9F100ED4C3F500F2BC65 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	9FE8531E0ED48C0600FDF576 /* hook-me-up */ = {
+	9F0C9F0A0ED4C3E800F2BC65 /* HookMeUp */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
-		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
 		executableSystemSymbolLevel = 0;
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
-		name = "hook-me-up";
+		name = HookMeUp;
 		sourceDirectories = (
 		);
 	};
-	9FE8532A0ED48C0D00FDF576 /* Source Control */ = {
+	9F0C9F100ED4C3F500F2BC65 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
 		scmConfiguration = {
 		};
 	};
-	9FE8532B0ED48C0D00FDF576 /* Code sense */ = {
+	9F0C9F110ED4C3F500F2BC65 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};

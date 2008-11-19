@@ -1,13 +1,13 @@
 //
 //  RootViewController.m
-//  hook-me-up
+//  HookMeUp
 //
 //  Created by Ted on 11/19/08.
 //  Copyright Anachromystic 2008. All rights reserved.
 //
 
 #import "RootViewController.h"
-#import "hook_me_upAppDelegate.h"
+#import "HookMeUpAppDelegate.h"
 
 
 @implementation RootViewController

@@ -1,6 +1,6 @@
 //
-//  hook_me_upAppDelegate.h
-//  hook-me-up
+//  HookMeUpAppDelegate.h
+//  HookMeUp
 //
 //  Created by Ted on 11/19/08.
 //  Copyright Anachromystic 2008. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface hook_me_upAppDelegate : NSObject <UIApplicationDelegate> {
+@interface HookMeUpAppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;
     UINavigationController *navigationController;
