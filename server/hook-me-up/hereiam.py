@@ -13,7 +13,7 @@ class Hooker(db.Model):
   latitude = db.FloatProperty()
   date = db.DateTimeProperty(auto_now_add=True)
 
-class Pimp(webapp.RequestHandler):
+class HereIAm(webapp.RequestHandler):
   def post(self):
     freshmeat = Hooker()
     freshmeat.phone = int(self.request.get('phone'))
@@ -33,7 +33,7 @@ class Pimp(webapp.RequestHandler):
         self.response.out.write(hooker.gender)
         self.response.out.write("<br/>")
 
-class MainPage(webapp.RequestHandler):
+class TestForm(webapp.RequestHandler):
   def get(self):
     self.response.out.write("""
           <html>
@@ -52,8 +52,8 @@ class MainPage(webapp.RequestHandler):
           """)
 
 application = webapp.WSGIApplication(
-                                     [('/', MainPage),
-                                     ('/hereiam', Pimp)],
+                                     [('/', TestForm),
+                                     ('/hereiam', HereIAm)],
                                      debug=True)
 
 def main():
