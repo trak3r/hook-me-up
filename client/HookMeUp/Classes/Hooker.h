@@ -1,0 +1,25 @@
+//
+//  Hooker.h
+//  HookMeUp
+//
+//  Created by Ted on 11/19/08.
+//  Copyright 2008 Anachromystic. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Hooker : NSObject {
+	
+@private    
+    NSString *_name;
+    NSString *_age;
+    NSString *_gender;
+    NSString *_distance;
+}
+
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *age;
+@property (nonatomic, retain) NSString *gender;
+@property (nonatomic, retain) NSString *distance;
+
+@end
