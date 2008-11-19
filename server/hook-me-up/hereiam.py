@@ -5,6 +5,7 @@ from google.appengine.ext.webapp.util import run_wsgi_app
 from google.appengine.ext import db
 
 class Hooker(db.Model):
+  phone = db.IntegerProperty()
   name = db.StringProperty()
   age = db.IntegerProperty()
   gender = db.StringProperty()
@@ -15,6 +16,7 @@ class Hooker(db.Model):
 class Pimp(webapp.RequestHandler):
   def post(self):
     hooker = Hooker()
+    hooker.phone = int(self.request.get('phone'))
     hooker.name = self.request.get('name')
     hooker.age = int(self.request.get('age'))
     hooker.gender = self.request.get('gender')
@@ -32,6 +34,7 @@ class MainPage(webapp.RequestHandler):
       self.response.out.write('<li>%s</li>' % hooker.name)
     self.response.out.write("""
           <form action="/hereiam" method="post">
+          <div><input name="phone" value="9548168827" /></div>
           <div><input name="name" value="Ted" /></div>
           <div><input name="age" value="36" /></div>
           <div><input name="gender" value="m" /></div>
