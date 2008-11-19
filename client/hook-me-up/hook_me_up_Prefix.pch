@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'hook-me-up' target in the 'hook-me-up' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
