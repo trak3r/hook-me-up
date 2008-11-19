@@ -15,29 +15,29 @@ class Hooker(db.Model):
 
 class Pimp(webapp.RequestHandler):
   def post(self):
-    hooker = Hooker()
-    hooker.phone = int(self.request.get('phone'))
-    hooker.name = self.request.get('name')
-    hooker.age = int(self.request.get('age'))
-    hooker.gender = self.request.get('gender')
-    hooker.longitude = float(self.request.get('longitude'))
-    hooker.latitude = float(self.request.get('latitude'))
-    hooker.put()
-    self.redirect('/')
+    freshmeat = Hooker()
+    freshmeat.phone = int(self.request.get('phone'))
+    freshmeat.name = self.request.get('name')
+    freshmeat.age = int(self.request.get('age'))
+    freshmeat.gender = self.request.get('gender')
+    freshmeat.longitude = float(self.request.get('longitude'))
+    freshmeat.latitude = float(self.request.get('latitude'))
+    freshmeat.put()
+    hookers = Hooker.gql("ORDER BY date DESC LIMIT 10")
+    for hooker in hookers:
+      if freshmeat.phone != hooker.phone:
+        self.response.out.write(hooker.name)
+        self.response.out.write("/")
+        self.response.out.write(hooker.age)
+        self.response.out.write("/")
+        self.response.out.write(hooker.gender)
+        self.response.out.write("<br/>")
 
 class MainPage(webapp.RequestHandler):
   def get(self):
-    self.response.out.write('<html><body>')
-    self.response.out.write('<h3>Hookers</h3>')
-    hookers = Hooker.gql("ORDER BY date DESC LIMIT 10")
-    for hooker in hookers:
-      self.response.out.write(hooker.name)
-      self.response.out.write("/")
-      self.response.out.write(hooker.age)
-      self.response.out.write("/")
-      self.response.out.write(hooker.gender)
-      self.response.out.write("<br/>")
     self.response.out.write("""
+          <html>
+          <body>
           <form action="/hereiam" method="post">
           <div><input name="phone" value="9548168827" /></div>
           <div><input name="name" value="Ted" /></div>
@@ -46,12 +46,14 @@ class MainPage(webapp.RequestHandler):
           <div><input name="longitude" value="-80.4038" /></div>
           <div><input name="latitude" value="26.1353"/></div>
             <div><input type="submit" value="Hook Me Up"></div>
-          </form>""")
-    self.response.out.write('</body></html>')
+          </form>
+          </body>
+          </html>
+          """)
 
 application = webapp.WSGIApplication(
                                      [('/', MainPage),
-                                      ('/hereiam', Pimp)],
+                                     ('/hereiam', Pimp)],
                                      debug=True)
 
 def main():
