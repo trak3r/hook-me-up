@@ -16,7 +16,7 @@ class Hooker(db.Model):
   date = db.DateTimeProperty(auto_now_add=True)
 
 class HereIAm(webapp.RequestHandler):
-  def post(self):
+  def get(self):
     freshmeat = Hooker()
     freshmeat.phone = int(self.request.get('phone'))
     freshmeat.name = self.request.get('name')
