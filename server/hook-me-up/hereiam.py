@@ -1,8 +1,10 @@
+import os
 import cgi
 
-from google.appengine.ext import webapp
-from google.appengine.ext.webapp.util import run_wsgi_app
 from google.appengine.ext import db
+from google.appengine.ext import webapp
+from google.appengine.ext.webapp import template
+from google.appengine.ext.webapp.util import run_wsgi_app
 
 class Hooker(db.Model):
   phone = db.IntegerProperty()
@@ -26,12 +28,11 @@ class HereIAm(webapp.RequestHandler):
     hookers = Hooker.gql("ORDER BY date DESC LIMIT 10")
     for hooker in hookers:
       if freshmeat.phone != hooker.phone:
-        self.response.out.write(hooker.name)
-        self.response.out.write("/")
-        self.response.out.write(hooker.age)
-        self.response.out.write("/")
-        self.response.out.write(hooker.gender)
-        self.response.out.write("<br/>")
+	    template_values = {
+	      'hooker': hooker,
+	      }
+	    path = os.path.join(os.path.dirname(__file__), 'hooker.html')
+	    self.response.out.write(template.render(path, template_values))	
 
 class TestForm(webapp.RequestHandler):
   def get(self):
