@@ -26,13 +26,12 @@ class HereIAm(webapp.RequestHandler):
     freshmeat.latitude = float(self.request.get('latitude'))
     freshmeat.put()
     hookers = Hooker.gql("ORDER BY date DESC LIMIT 10")
-    for hooker in hookers:
-      if freshmeat.phone != hooker.phone:
-	    template_values = {
-	      'hooker': hooker,
-	      }
-	    path = os.path.join(os.path.dirname(__file__), 'hooker.html')
-	    self.response.out.write(template.render(path, template_values))	
+    template_values = {
+	  'path': os.path.join(os.path.dirname(__file__), 'hooker.html'),
+      'hookers': hookers,
+      }
+    path = os.path.join(os.path.dirname(__file__), 'hookers.html')
+    self.response.out.write(template.render(path, template_values))	
 
 class TestForm(webapp.RequestHandler):
   def get(self):

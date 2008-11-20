@@ -202,46 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>9F84DFF40ED4CD9C00147E02</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>HookMeUpAppDelegate.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>9F84DFF50ED4CD9C00147E02</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>HookMeUpAppDelegate.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>9F356C2D0ED4CDBD005DEA4E</string>
-						<key>history</key>
-						<array>
-							<string>9F84DFF60ED4CD9C00147E02</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {748, 464}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>677 366 748 505 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>9F84DFF10ED4CD9C00147E02</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>HookMeUpAppDelegate.h</string>
@@ -256,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>9F356C2E0ED4CDBD005DEA4E</string>
+						<string>9F356C6A0ED5CC8B005DEA4E</string>
 						<key>history</key>
 						<array>
 							<string>9F84DFF30ED4CD9C00147E02</string>
@@ -275,7 +235,47 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>691 150 748 505 0 0 1440 878 </string>
+				<string>692 149 748 505 0 0 1440 878 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>9F84DFF40ED4CD9C00147E02</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>HookMeUpAppDelegate.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>9F84DFF50ED4CD9C00147E02</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>HookMeUpAppDelegate.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>9F356C6B0ED5CC8B005DEA4E</string>
+						<key>history</key>
+						<array>
+							<string>9F84DFF60ED4CD9C00147E02</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {748, 464}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>677 365 748 505 0 0 1440 878 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -296,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>9F356C2F0ED4CDBD005DEA4E</string>
+						<string>9F356C6C0ED5CC8B005DEA4E</string>
 						<key>history</key>
 						<array>
 							<string>9F84DFF90ED4CD9C00147E02</string>
@@ -315,7 +315,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>688 245 748 505 0 0 1440 878 </string>
+				<string>687 246 748 505 0 0 1440 878 </string>
 			</dict>
 		</dict>
 	</array>
@@ -388,11 +388,13 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>9</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -433,7 +435,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HookMeUpAppDelegate.m</string>
+								<string>Hooker.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -441,17 +443,18 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HookMeUpAppDelegate.m</string>
+										<string>Hooker.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9F356C2A0ED4CDBD005DEA4E</string>
+										<string>9F356C690ED5CC8B005DEA4E</string>
 										<key>history</key>
 										<array>
 											<string>9F84DFE80ED4CD9C00147E02</string>
 											<string>9F84DFE90ED4CD9C00147E02</string>
+											<string>9F356C650ED5CC8B005DEA4E</string>
+											<string>9F356C660ED5CC8B005DEA4E</string>
 											<string>9F84DFEA0ED4CD9C00147E02</string>
-											<string>9F84DFF00ED4CD9C00147E02</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -459,6 +462,8 @@
 											<string>9F84DFED0ED4CD9C00147E02</string>
 											<string>9F84DFEE0ED4CD9C00147E02</string>
 											<string>9F84DFEF0ED4CD9C00147E02</string>
+											<string>9F356C670ED5CC8B005DEA4E</string>
+											<string>9F356C680ED5CC8B005DEA4E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -652,11 +657,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>9F84DFF70ED4CD9C00147E02</string>
-		<string>/Users/ted/Desktop/HookMeUp/client/HookMeUp/HookMeUp.xcodeproj</string>
-		<string>9F84DFF10ED4CD9C00147E02</string>
 		<string>9F84DF8A0ED4C46C00147E02</string>
 		<string>9F84DFF40ED4CD9C00147E02</string>
+		<string>9F84DFF10ED4CD9C00147E02</string>
+		<string>/Users/ted/Desktop/HookMeUp/client/HookMeUp/HookMeUp.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>630 113 788 504 0 0 1440 878 </string>
@@ -689,7 +696,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 218}}</string>
 								<key>RubberWindowFrame</key>
-								<string>368 262 500 500 0 0 1440 878 </string>
+								<string>368 263 500 500 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -715,7 +722,7 @@
 								<key>Frame</key>
 								<string>{{0, 223}, {500, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>368 262 500 500 0 0 1440 878 </string>
+								<string>368 263 500 500 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -745,7 +752,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.buildV3</string>
 			<key>WindowString</key>
-			<string>368 262 500 500 0 0 1440 878 </string>
+			<string>368 263 500 500 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>9F84DF8A0ED4C46C00147E02</string>
 			<key>WindowToolIsVisible</key>
@@ -780,8 +787,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 185}}</string>
-											<string>{{316, 0}, {378, 185}}</string>
+											<string>{{0, 0}, {316, 194}}</string>
+											<string>{{316, 0}, {378, 194}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -796,8 +803,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 185}}</string>
-											<string>{{0, 185}, {694, 196}}</string>
+											<string>{{0, 0}, {694, 194}}</string>
+											<string>{{0, 194}, {694, 187}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -830,7 +837,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 185}}</string>
+									<string>{{316, 0}, {378, 194}}</string>
 									<key>RubberWindowFrame</key>
 									<string>368 340 694 422 0 0 1440 878 </string>
 								</dict>
@@ -858,13 +865,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>9F84DF8C0ED4C46C00147E02</string>
+				<string>9F356C6D0ED5CC8B005DEA4E</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>9F84DF8D0ED4C46C00147E02</string>
-				<string>9F84DF8E0ED4C46C00147E02</string>
-				<string>9F84DF8F0ED4C46C00147E02</string>
-				<string>9F84DF900ED4C46C00147E02</string>
-				<string>9F84DF910ED4C46C00147E02</string>
+				<string>9F356C6E0ED5CC8B005DEA4E</string>
+				<string>9F356C6F0ED5CC8B005DEA4E</string>
+				<string>9F356C700ED5CC8B005DEA4E</string>
+				<string>9F356C710ED5CC8B005DEA4E</string>
+				<string>9F356C720ED5CC8B005DEA4E</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -1026,7 +1033,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>9F84DF920ED4C46C00147E02</string>
+				<string>9F356C730ED5CC8B005DEA4E</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

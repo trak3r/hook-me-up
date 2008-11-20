@@ -1,0 +1,12 @@
+<xml>
+	<hookers>
+	    {% for hooker in hookers %}
+		<hooker>
+			<name>{{ hooker.name }}</name>
+			<age>{{ hooker.age }}</age>
+			<gender>{{ hooker.gender }}</gender>
+			<distance>{{ hooker.distance }}</distance>
+		</hooker>
+	    {% endfor %}
+	</hookers>
+</xml>
