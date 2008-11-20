@@ -36,21 +36,8 @@ class HereIAm(webapp.RequestHandler):
 
 class TestForm(webapp.RequestHandler):
   def get(self):
-    self.response.out.write("""
-          <html>
-          <body>
-          <form action="/hereiam" method="post">
-          <div><input name="phone" value="9548168827" /></div>
-          <div><input name="name" value="Ted" /></div>
-          <div><input name="age" value="36" /></div>
-          <div><input name="gender" value="m" /></div>
-          <div><input name="longitude" value="-80.4038" /></div>
-          <div><input name="latitude" value="26.1353"/></div>
-            <div><input type="submit" value="Hook Me Up"></div>
-          </form>
-          </body>
-          </html>
-          """)
+    path = os.path.join(os.path.dirname(__file__), 'testform.html')
+    self.response.out.write(template.render(path, {}))	
 
 application = webapp.WSGIApplication(
                                      [('/', TestForm),
