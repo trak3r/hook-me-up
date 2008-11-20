@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class Hooker;
+
 @interface HookMeUpAppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;
@@ -20,7 +22,6 @@
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 
-
 @property (nonatomic, retain) NSMutableArray *list;
 
 - (BOOL)isDataSourceAvailable;
@@ -28,7 +29,7 @@
 - (NSUInteger)countOfList;
 - (id)objectInListAtIndex:(NSUInteger)theIndex;
 - (void)getList:(id *)objsPtr range:(NSRange)range;
-
+- (void)addToHookerList:(Hooker *)hooker;
 
 @end
 

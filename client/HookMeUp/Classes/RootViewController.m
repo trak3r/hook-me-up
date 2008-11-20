@@ -8,7 +8,7 @@
 
 #import "RootViewController.h"
 #import "HookMeUpAppDelegate.h"
-
+#import "Hooker.h"
 
 @implementation RootViewController
 
@@ -32,6 +32,21 @@
     }
     
     // Set up the cell
+	HookMeUpAppDelegate *appDelegate = (HookMeUpAppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+	if ([appDelegate isDataSourceAvailable] == NO) {
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"DefaultTableViewCell"] autorelease];
+        cell.text = NSLocalizedString(@"Server Not Available", @"Server Not Available message");
+		cell.textColor = [UIColor colorWithWhite:0.5 alpha:0.5];
+		cell.accessoryType = UITableViewCellAccessoryNone;
+		return cell;
+	}
+	
+//	Hooker *hookerForRow = [appDelegate objectInListAtIndex:indexPath.row];
+	cell.text = NSLocalizedString(@"Insert hooker here", @"Insert hooker here");
+	cell.textColor = [UIColor colorWithWhite:0.5 alpha:0.5];
+	cell.accessoryType = UITableViewCellAccessoryNone;
+//    [cell setHooker:hookerForRow];
     return cell;
 }
 

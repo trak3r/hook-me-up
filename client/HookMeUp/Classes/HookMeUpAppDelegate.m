@@ -12,7 +12,7 @@
 #import "Hooker.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 
-static NSString *feedURLString = @"http://localhost:8080/hereiam";
+static NSString *feedURLString = @"http://localhost:8080/hereiam?phone=9548168827&name=Ted&age=36&gender=m&longitude=-80.4038&latitude=26.1353";
 
 @implementation HookMeUpAppDelegate
 
@@ -54,6 +54,20 @@ static NSString *feedURLString = @"http://localhost:8080/hereiam";
     [pool release];
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
+
+
+- (void)reloadTable
+{
+    [[(RootViewController *)[self.navigationController topViewController] tableView] reloadData];
+}
+
+
+- (void)addToHookerList:(Hooker *)newHooker
+{
+    [self.list addObject:newHooker];
+    // The table needs to be reloaded to reflect the new content of the list.
+    [self reloadTable];
 }
 
 
