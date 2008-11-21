@@ -1,15 +1,15 @@
 //
 //  Hooker.h
-//  HookMeUp
+//  Hooker
 //
-//  Created by Ted on 11/19/08.
-//  Copyright 2008 Anachromystic. All rights reserved.
+//  Created by FIXME on 2008-11-21.
+//  Copyright 2008 FIXME. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface Hooker : NSObject {
-	
+
 @private    
     NSString *_name;
     NSString *_age;

@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HookMeUpAppDelegate.m</string>
+								<string>XMLReader.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,21 +322,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HookMeUpAppDelegate.m</string>
+										<string>XMLReader.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9F356CE80ED5FC8D005DEA4E</string>
+										<string>9F356D0C0ED70950005DEA4E</string>
 										<key>history</key>
 										<array>
-											<string>9F84DFE80ED4CD9C00147E02</string>
 											<string>9F356C660ED5CC8B005DEA4E</string>
-											<string>9F356CC20ED5FBE4005DEA4E</string>
-											<string>9F356CC40ED5FBE4005DEA4E</string>
-											<string>9F356CC60ED5FBE4005DEA4E</string>
 											<string>9F356CE40ED5FC8D005DEA4E</string>
 											<string>9F356CE50ED5FC8D005DEA4E</string>
-											<string>9F356CDE0ED5FC52005DEA4E</string>
+											<string>9F356CEB0ED70566005DEA4E</string>
+											<string>9F356CF80ED70950005DEA4E</string>
+											<string>9F356CF90ED70950005DEA4E</string>
+											<string>9F356CFA0ED70950005DEA4E</string>
+											<string>9F356CFB0ED70950005DEA4E</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -363,6 +363,27 @@
 											<string>9F356CE10ED5FC52005DEA4E</string>
 											<string>9F356CE60ED5FC8D005DEA4E</string>
 											<string>9F356CE70ED5FC8D005DEA4E</string>
+											<string>9F356CEE0ED70566005DEA4E</string>
+											<string>9F356CEF0ED70566005DEA4E</string>
+											<string>9F356CF00ED70566005DEA4E</string>
+											<string>9F356CF10ED70566005DEA4E</string>
+											<string>9F356CF60ED7059E005DEA4E</string>
+											<string>9F356CFC0ED70950005DEA4E</string>
+											<string>9F356CFD0ED70950005DEA4E</string>
+											<string>9F356CFE0ED70950005DEA4E</string>
+											<string>9F356CFF0ED70950005DEA4E</string>
+											<string>9F356D000ED70950005DEA4E</string>
+											<string>9F356D010ED70950005DEA4E</string>
+											<string>9F356D020ED70950005DEA4E</string>
+											<string>9F356D030ED70950005DEA4E</string>
+											<string>9F356D040ED70950005DEA4E</string>
+											<string>9F356D050ED70950005DEA4E</string>
+											<string>9F356D060ED70950005DEA4E</string>
+											<string>9F356D070ED70950005DEA4E</string>
+											<string>9F356D080ED70950005DEA4E</string>
+											<string>9F356D090ED70950005DEA4E</string>
+											<string>9F356D0A0ED70950005DEA4E</string>
+											<string>9F356D0B0ED70950005DEA4E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -559,8 +580,8 @@
 		<string>9F356CD90ED5FBE4005DEA4E</string>
 		<string>9F356CDA0ED5FBE4005DEA4E</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>9F84DF8A0ED4C46C00147E02</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ted/Desktop/HookMeUp/client/HookMeUp/HookMeUp.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
