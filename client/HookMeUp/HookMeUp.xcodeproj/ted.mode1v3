@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>6</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XMLReader.m</string>
+								<string>HookMeUpAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,21 +322,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XMLReader.m</string>
+										<string>HookMeUpAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9F356D0C0ED70950005DEA4E</string>
+										<string>9F356D8E0ED71269005DEA4E</string>
 										<key>history</key>
 										<array>
 											<string>9F356C660ED5CC8B005DEA4E</string>
-											<string>9F356CE40ED5FC8D005DEA4E</string>
-											<string>9F356CE50ED5FC8D005DEA4E</string>
-											<string>9F356CEB0ED70566005DEA4E</string>
 											<string>9F356CF80ED70950005DEA4E</string>
-											<string>9F356CF90ED70950005DEA4E</string>
 											<string>9F356CFA0ED70950005DEA4E</string>
-											<string>9F356CFB0ED70950005DEA4E</string>
+											<string>9F356D1B0ED70C7D005DEA4E</string>
+											<string>9F356D1D0ED70C7D005DEA4E</string>
+											<string>9F356D820ED71269005DEA4E</string>
+											<string>9F356D830ED71269005DEA4E</string>
+											<string>9F356D840ED71269005DEA4E</string>
+											<string>9F356D850ED71269005DEA4E</string>
+											<string>9F356D860ED71269005DEA4E</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -384,6 +386,26 @@
 											<string>9F356D090ED70950005DEA4E</string>
 											<string>9F356D0A0ED70950005DEA4E</string>
 											<string>9F356D0B0ED70950005DEA4E</string>
+											<string>9F356D1F0ED70C7D005DEA4E</string>
+											<string>9F356D200ED70C7D005DEA4E</string>
+											<string>9F356D220ED70C7D005DEA4E</string>
+											<string>9F356D230ED70C7D005DEA4E</string>
+											<string>9F356D300ED70D29005DEA4E</string>
+											<string>9F356D310ED70D29005DEA4E</string>
+											<string>9F356D4F0ED70EF5005DEA4E</string>
+											<string>9F356D500ED70EF5005DEA4E</string>
+											<string>9F356D510ED70EF5005DEA4E</string>
+											<string>9F356D710ED71062005DEA4E</string>
+											<string>9F356D720ED71062005DEA4E</string>
+											<string>9F356D730ED71062005DEA4E</string>
+											<string>9F356D740ED71062005DEA4E</string>
+											<string>9F356D870ED71269005DEA4E</string>
+											<string>9F356D880ED71269005DEA4E</string>
+											<string>9F356D890ED71269005DEA4E</string>
+											<string>9F356D8A0ED71269005DEA4E</string>
+											<string>9F356D8B0ED71269005DEA4E</string>
+											<string>9F356D8C0ED71269005DEA4E</string>
+											<string>9F356D8D0ED71269005DEA4E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -577,12 +599,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>9F356D8F0ED71269005DEA4E</string>
 		<string>9F356CD90ED5FBE4005DEA4E</string>
 		<string>9F356CDA0ED5FBE4005DEA4E</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>9F84DF8A0ED4C46C00147E02</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>9F84DF8A0ED4C46C00147E02</string>
 		<string>/Users/ted/Desktop/HookMeUp/client/HookMeUp/HookMeUp.xcodeproj</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 	</array>
 	<key>WindowString</key>
 	<string>436 94 983 784 0 0 1440 878 </string>
@@ -758,10 +781,10 @@
 									<key>Frame</key>
 									<string>{{381, 0}, {455, 386}}</string>
 									<key>RubberWindowFrame</key>
-									<string>315 95 836 783 0 0 1440 878 </string>
+									<string>24 95 836 783 0 0 1440 878 </string>
 								</dict>
 								<key>RubberWindowFrame</key>
-								<string>315 95 836 783 0 0 1440 878 </string>
+								<string>24 95 836 783 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugSessionModule</string>
@@ -795,11 +818,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
 			<key>WindowString</key>
-			<string>315 95 836 783 0 0 1440 878 </string>
+			<string>24 95 836 783 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

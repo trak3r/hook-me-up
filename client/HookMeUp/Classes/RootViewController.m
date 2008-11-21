@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "HookMeUpAppDelegate.h"
 #import "Hooker.h"
+#import "AppDelegateMethods.h"
 
 @implementation RootViewController
 
@@ -18,7 +19,15 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+	HookMeUpAppDelegate *appDelegate = (HookMeUpAppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSUInteger count = [appDelegate countOfList];
+	// If no earthquakes were parsed because the RSS feed was not available,
+    // return a count of 1 so that the data source method tableView:cellForRowAtIndexPath: is called.
+    // It also calls -[SeismicXMLAppDelegate isDataSourceAvailable] to determine what to show in the table.
+    if ([appDelegate isDataSourceAvailable] == NO) {
+        return 1;
+    }
+	return count;
 }
 
 

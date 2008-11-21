@@ -82,18 +82,14 @@ static NSUInteger parsedHookersCounter;
     
     if ([elementName isEqualToString:@"name"]) {
         self.currentHookerObject.name = self.contentOfCurrentHookerProperty;
-	}
-    
-    if ([elementName isEqualToString:@"age"]) {
+	} else if ([elementName isEqualToString:@"age"]) {
         self.currentHookerObject.age = self.contentOfCurrentHookerProperty;
-	}
-    
-    if ([elementName isEqualToString:@"gender"]) {
+	} else if ([elementName isEqualToString:@"gender"]) {
         self.currentHookerObject.gender = self.contentOfCurrentHookerProperty;
-	}
-    
-    if ([elementName isEqualToString:@"distance"]) {
+	} else if ([elementName isEqualToString:@"distance"]) {
         self.currentHookerObject.distance = self.contentOfCurrentHookerProperty;
+	}else {
+        self.contentOfCurrentHookerProperty = nil;
 	}
 }
 
