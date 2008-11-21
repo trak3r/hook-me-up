@@ -26,6 +26,9 @@ class HereIAm(webapp.RequestHandler):
     freshmeat.latitude = float(self.request.get('latitude'))
     freshmeat.put()
     hookers = Hooker.gql("ORDER BY date DESC LIMIT 10")
+	# TODO: filter out self
+	# TODO: filter out dupes (by phone number)
+	# TODO: set content-type to XML?
     template_values = {
 	  'path': os.path.join(os.path.dirname(__file__), 'hooker.html'),
       'hookers': hookers,
