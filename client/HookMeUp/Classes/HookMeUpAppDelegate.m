@@ -65,19 +65,22 @@ static NSString *feedURLString = @"http://localhost:8080/hereiam?phone=954816882
 
 - (void)addToHookerList:(Hooker *)newHooker
 {
-    [self.list addObject:newHooker];
+//    [self.list addObject:newHooker];
+    [list addObject:newHooker];
     // The table needs to be reloaded to reflect the new content of the list.
     [self reloadTable];
 }
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+	self.list = [NSMutableArray array];
+	
     if ([self isDataSourceAvailable] == NO) {
         return;
     } else {
 		[self getListOfHookers];
 	}
-	
+
 	// Configure and show the window
 	[window addSubview:[navigationController view]];
 	[window makeKeyAndVisible];
