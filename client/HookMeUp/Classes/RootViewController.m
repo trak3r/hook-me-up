@@ -51,8 +51,8 @@
 		return cell;
 	}
 	
-//	Hooker *hookerForRow = [appDelegate objectInListAtIndex:indexPath.row];
-	cell.text = NSLocalizedString(@"Insert hooker here", @"Insert hooker here");
+	Hooker *hookerForRow = [appDelegate objectInListAtIndex:indexPath.row];
+	cell.text = hookerForRow.name;
 	cell.textColor = [UIColor colorWithWhite:0.5 alpha:0.5];
 	cell.accessoryType = UITableViewCellAccessoryNone;
 //    [cell setHooker:hookerForRow];
