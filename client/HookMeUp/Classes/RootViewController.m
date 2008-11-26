@@ -54,9 +54,9 @@
 	Hooker *hookerForRow = [appDelegate objectInListAtIndex:indexPath.row];
 	NSMutableString *hookerLabel = [[NSMutableString alloc] init];
 	[hookerLabel appendString:hookerForRow.name];
-	[hookerLabel appendString:@" / "];
+	[hookerLabel appendString:@"/ "];
 	[hookerLabel appendString:hookerForRow.age];
-	[hookerLabel appendString:@" / "];
+	[hookerLabel appendString:@"/ "];
 	[hookerLabel appendString:hookerForRow.gender];
 	cell.text = hookerLabel;
 	[hookerLabel release];
