@@ -52,7 +52,14 @@
 	}
 	
 	Hooker *hookerForRow = [appDelegate objectInListAtIndex:indexPath.row];
-	cell.text = hookerForRow.name;
+	NSMutableString *hookerLabel = [[NSMutableString alloc] init];
+	[hookerLabel appendString:hookerForRow.name];
+	[hookerLabel appendString:@" / "];
+	[hookerLabel appendString:hookerForRow.age];
+	[hookerLabel appendString:@" / "];
+	[hookerLabel appendString:hookerForRow.gender];
+	cell.text = hookerLabel;
+	[hookerLabel release];
 	cell.textColor = [UIColor colorWithWhite:0.5 alpha:0.5];
 	cell.accessoryType = UITableViewCellAccessoryNone;
 //    [cell setHooker:hookerForRow];
