@@ -17,6 +17,7 @@ class Hooker(db.Model):
 
 class HereIAm(webapp.RequestHandler):
   def get(self):
+    # save the new hooker
     freshmeat = Hooker()
     freshmeat.phone = int(self.request.get('phone'))
     freshmeat.name = self.request.get('name')
@@ -25,21 +26,31 @@ class HereIAm(webapp.RequestHandler):
     freshmeat.longitude = float(self.request.get('longitude'))
     freshmeat.latitude = float(self.request.get('latitude'))
     freshmeat.put()
-    hookers = Hooker.gql("ORDER BY date DESC LIMIT 10")
-	# TODO: filter out self
-	# TODO: filter out dupes (by phone number)
-	# TODO: set content-type to XML?
+    # find nearby fellow hookers
+    # TODO: sort by proximity, latitude and longitude
+    dirtyHookers = Hooker.gql("ORDER BY date DESC")
+    # GQL doesn't have a DISTINCT keyword 
+    # so we have to manually filter the results :-(
+    cleanHookers = []
+    for hooker in dirtyHookers:
+        if hooker not in cleanHookers:
+            # you can't filter by inequality in GQL 
+            # unless you sort by the same field 
+            # so we have to manually filter out the current entity
+            if hooker.phone <> freshmeat.phone:
+                cleanHookers.append(hooker)
     template_values = {
-	  'path': os.path.join(os.path.dirname(__file__), 'hooker.html'),
-      'hookers': hookers,
+      'path': os.path.join(os.path.dirname(__file__), 'hooker.html'),
+      'hookers': cleanHookers,
       }
     path = os.path.join(os.path.dirname(__file__), 'hookers.html')
-    self.response.out.write(template.render(path, template_values))	
+    # TODO: set content-type to XML?
+    self.response.out.write(template.render(path, template_values)) 
 
 class TestForm(webapp.RequestHandler):
   def get(self):
     path = os.path.join(os.path.dirname(__file__), 'testform.html')
-    self.response.out.write(template.render(path, {}))	
+    self.response.out.write(template.render(path, {}))  
 
 application = webapp.WSGIApplication(
                                      [('/', TestForm),
