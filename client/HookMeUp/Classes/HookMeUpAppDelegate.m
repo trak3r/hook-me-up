@@ -51,6 +51,9 @@ static NSString *feedURLString = @"http://localhost:8080/hereiam";
    	NSMutableString *feedURLStringWithParams = [[NSMutableString alloc] init];
 	[feedURLStringWithParams appendString:feedURLString];
 	[feedURLStringWithParams appendString:@"?"];
+	[feedURLStringWithParams appendString:@"id="];
+	[feedURLStringWithParams appendString:[[[UIDevice currentDevice] uniqueIdentifier] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	[feedURLStringWithParams appendString:@"&"];
 	[feedURLStringWithParams appendString:@"name="];
 	[feedURLStringWithParams appendString:[@"Ted" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]; // TODO: get from profile
 	[feedURLStringWithParams appendString:@"&"];
