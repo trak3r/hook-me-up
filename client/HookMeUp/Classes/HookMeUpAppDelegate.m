@@ -12,7 +12,7 @@
 #import "Hooker.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 
-static NSString *feedURLString = @"http://localhost:8080/hereiam?phone=9548168827&name=Ted&age=36&gender=m&longitude=-80.4038&latitude=26.1353";
+static NSString *feedURLString = @"http://localhost:8080/hereiam";
 
 @implementation HookMeUpAppDelegate
 
@@ -47,10 +47,31 @@ static NSString *feedURLString = @"http://localhost:8080/hereiam?phone=954816882
 	NSError *parseError = nil;
 	
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    
+
+   	NSMutableString *feedURLStringWithParams = [[NSMutableString alloc] init];
+	[feedURLStringWithParams appendString:feedURLString];
+	[feedURLStringWithParams appendString:@"?"];
+	[feedURLStringWithParams appendString:@"name="];
+	[feedURLStringWithParams appendString:[@"Ted" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]; // TODO: get from profile
+	[feedURLStringWithParams appendString:@"&"];
+	[feedURLStringWithParams appendString:@"age="];
+	[feedURLStringWithParams appendString:@"36"]; // TODO: get from profile
+	[feedURLStringWithParams appendString:@"&"];
+	[feedURLStringWithParams appendString:@"gender="];
+	[feedURLStringWithParams appendString:@"m"]; // TODO: get from profile
+	[feedURLStringWithParams appendString:@"&"];
+	[feedURLStringWithParams appendString:@"phone="];
+	[feedURLStringWithParams appendString:@"9548168827"]; // TODO: get from device
+	[feedURLStringWithParams appendString:@"&"];
+	[feedURLStringWithParams appendString:@"latitude="];
+	[feedURLStringWithParams appendString:@"26.1353"]; // TODO: get from device
+	[feedURLStringWithParams appendString:@"&"];
+	[feedURLStringWithParams appendString:@"longitude="];
+	[feedURLStringWithParams appendString:@"-80.4038"]; // TODO: get from device
     XMLReader *streamingParser = [[XMLReader alloc] init];
-    [streamingParser parseXMLFileAtURL:[NSURL URLWithString:feedURLString] parseError:&parseError];
+    [streamingParser parseXMLFileAtURL:[NSURL URLWithString:feedURLStringWithParams] parseError:&parseError];
     [streamingParser release];        
+	[feedURLStringWithParams release];
     [pool release];
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

@@ -21,9 +21,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	HookMeUpAppDelegate *appDelegate = (HookMeUpAppDelegate *)[[UIApplication sharedApplication] delegate];
     NSUInteger count = [appDelegate countOfList];
-	// If no earthquakes were parsed because the RSS feed was not available,
+	// If no hookers were parsed because the RSS feed was not available,
     // return a count of 1 so that the data source method tableView:cellForRowAtIndexPath: is called.
-    // It also calls -[SeismicXMLAppDelegate isDataSourceAvailable] to determine what to show in the table.
     if ([appDelegate isDataSourceAvailable] == NO) {
         return 1;
     }
